@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Test</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>Memory Test</h1>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- Welcome Section -->
+  <div id="welcome-container">
+    <h2>Welcome to the Memory Test</h2>
+    <p>Challenge your memory by identifying elements in images!</p>
+    <button id="start-button">Start</button>
+  </div>
+
+  <!-- Instructions Section -->
+  <div id="instructions-container" style="display: none;">
+    <h2>How It Works</h2>
+    <p>You will see a series of images. Each image will be displayed for 5 seconds. After the image disappears, you will type what you remember seeing.</p>
+    <button id="continue-button">Continue</button>
+  </div>
+
+  <!-- Test Section -->
+  <div id="test-container" style="display: none;">
+    <div id="image-container">
+      <img id="image" src="" alt="Memory Test Image" style="display: none;">
+    </div>
+    <div id="input-container">
+      <textarea id="response" rows="4" cols="50" placeholder="Type what you saw..." style="display: none;"></textarea>
+      <button id="submit" style="display: none;">Submit</button>
+    </div>
+  </div>
+
+  <!-- Results Section -->
+  <div id="result-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
